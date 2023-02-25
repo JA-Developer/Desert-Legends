@@ -1,0 +1,1039 @@
+[gd_scene load_steps=79 format=2]
+
+[ext_resource path="res://World.gd" type="Script" id=1]
+[ext_resource path="res://Assets/deserttileset/png/BG.png" type="Texture" id=2]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Crate.png" type="Texture" id=3]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Tree.png" type="Texture" id=4]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Bush (1).png" type="Texture" id=5]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Grass (1).png" type="Texture" id=6]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Grass (2).png" type="Texture" id=7]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Bush (2).png" type="Texture" id=8]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Cactus (3).png" type="Texture" id=9]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Cactus (1).png" type="Texture" id=10]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Cactus (2).png" type="Texture" id=11]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Stone.png" type="Texture" id=12]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Skeleton.png" type="Texture" id=13]
+[ext_resource path="res://Assets/deserttileset/png/Objects/SignArrow.png" type="Texture" id=14]
+[ext_resource path="res://Assets/deserttileset/png/Objects/Sign.png" type="Texture" id=15]
+[ext_resource path="res://Assets/freedinosprite/png/Idle (1).png" type="Texture" id=16]
+[ext_resource path="res://Assets/freedinosprite/png/Idle (2).png" type="Texture" id=17]
+[ext_resource path="res://Assets/freedinosprite/png/Idle (3).png" type="Texture" id=18]
+[ext_resource path="res://Assets/freedinosprite/png/Idle (4).png" type="Texture" id=19]
+[ext_resource path="res://Assets/freedinosprite/png/Idle (5).png" type="Texture" id=20]
+[ext_resource path="res://Assets/freedinosprite/png/Idle (6).png" type="Texture" id=21]
+[ext_resource path="res://Assets/freedinosprite/png/Idle (7).png" type="Texture" id=22]
+[ext_resource path="res://Assets/freedinosprite/png/Idle (8).png" type="Texture" id=23]
+[ext_resource path="res://Assets/freedinosprite/png/Idle (9).png" type="Texture" id=24]
+[ext_resource path="res://Assets/freedinosprite/png/Idle (10).png" type="Texture" id=25]
+[ext_resource path="res://Assets/freedinosprite/png/Run (1).png" type="Texture" id=26]
+[ext_resource path="res://Assets/freedinosprite/png/Run (2).png" type="Texture" id=27]
+[ext_resource path="res://Assets/freedinosprite/png/Run (3).png" type="Texture" id=28]
+[ext_resource path="res://Assets/freedinosprite/png/Run (4).png" type="Texture" id=29]
+[ext_resource path="res://Assets/freedinosprite/png/Run (5).png" type="Texture" id=30]
+[ext_resource path="res://Assets/freedinosprite/png/Run (6).png" type="Texture" id=31]
+[ext_resource path="res://Assets/freedinosprite/png/Run (7).png" type="Texture" id=32]
+[ext_resource path="res://Assets/freedinosprite/png/Run (8).png" type="Texture" id=33]
+[ext_resource path="res://Assets/freedinosprite/png/Dead (1).png" type="Texture" id=34]
+[ext_resource path="res://Assets/freedinosprite/png/Dead (2).png" type="Texture" id=35]
+[ext_resource path="res://Assets/freedinosprite/png/Dead (3).png" type="Texture" id=36]
+[ext_resource path="res://Assets/freedinosprite/png/Dead (4).png" type="Texture" id=37]
+[ext_resource path="res://Assets/freedinosprite/png/Dead (5).png" type="Texture" id=38]
+[ext_resource path="res://Assets/freedinosprite/png/Dead (6).png" type="Texture" id=39]
+[ext_resource path="res://Assets/freedinosprite/png/Dead (7).png" type="Texture" id=40]
+[ext_resource path="res://Assets/freedinosprite/png/Dead (8).png" type="Texture" id=41]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (1).png" type="Texture" id=42]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (2).png" type="Texture" id=43]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (3).png" type="Texture" id=44]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (4).png" type="Texture" id=45]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (5).png" type="Texture" id=46]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (6).png" type="Texture" id=47]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (7).png" type="Texture" id=48]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (8).png" type="Texture" id=49]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (9).png" type="Texture" id=50]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (10).png" type="Texture" id=51]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (11).png" type="Texture" id=52]
+[ext_resource path="res://Assets/freedinosprite/png/Jump (12).png" type="Texture" id=53]
+[ext_resource path="res://Assets/deserttileset/png/Tile/1.png" type="Texture" id=54]
+[ext_resource path="res://Assets/deserttileset/png/Tile/2.png" type="Texture" id=55]
+[ext_resource path="res://Assets/deserttileset/png/Tile/12.png" type="Texture" id=56]
+[ext_resource path="res://Assets/deserttileset/png/Tile/9.png" type="Texture" id=57]
+[ext_resource path="res://Assets/deserttileset/png/Tile/4.png" type="Texture" id=58]
+[ext_resource path="res://Assets/deserttileset/png/Tile/5.png" type="Texture" id=59]
+[ext_resource path="res://Assets/deserttileset/png/Tile/8.png" type="Texture" id=60]
+[ext_resource path="res://Assets/deserttileset/png/Tile/11.png" type="Texture" id=61]
+[ext_resource path="res://Assets/deserttileset/png/Tile/7.png" type="Texture" id=62]
+[ext_resource path="res://Assets/deserttileset/png/Tile/10.png" type="Texture" id=63]
+[ext_resource path="res://Assets/deserttileset/png/Tile/16.png" type="Texture" id=64]
+[ext_resource path="res://Assets/deserttileset/png/Tile/15.png" type="Texture" id=65]
+[ext_resource path="res://Assets/deserttileset/png/Objects/StoneBlock.png" type="Texture" id=66]
+[ext_resource path="res://FireBall.tscn" type="PackedScene" id=67]
+[ext_resource path="res://Caballero.tscn" type="PackedScene" id=68]
+
+[sub_resource type="PhysicsMaterial" id=8]
+friction = 0.01
+bounce = 1.0
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="PhysicsMaterial" id=9]
+friction = 0.01
+bounce = 0.3
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+
+[sub_resource type="PhysicsMaterial" id=10]
+friction = 0.1
+
+[sub_resource type="RectangleShape2D" id=4]
+
+[sub_resource type="CapsuleShape2D" id=5]
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 33.0048, 10 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 41.1334, 10 )
+
+[node name="World" type="Node2D"]
+position = Vector2( 511, 297.295 )
+scale = Vector2( 15.9688, 9.39063 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 261.15, 337.15, 598.0 ],
+"_edit_vertical_guides_": [ 443.0, 519.0 ]
+}
+
+[node name="BG" type="Sprite" parent="."]
+position = Vector2( 0.0626221, 0.138851 )
+scale = Vector2( 0.0500978, 0.0665122 )
+texture = ExtResource( 2 )
+
+[node name="Box1" type="RigidBody2D" parent="."]
+position = Vector2( 1.5481, 1.91681 )
+scale = Vector2( 0.03, 0.054 )
+mass = 1.02041e-05
+physics_material_override = SubResource( 8 )
+
+[node name="Crate" type="Sprite" parent="Box1"]
+position = Vector2( -0.194066, -0.367442 )
+scale = Vector2( 0.638624, 0.628392 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Box1"]
+position = Vector2( -2.73436e-06, -0.104408 )
+scale = Vector2( 3.22264, 3.21095 )
+shape = SubResource( 1 )
+
+[node name="Box2" type="RigidBody2D" parent="."]
+position = Vector2( -36.401, 21.2978 )
+scale = Vector2( 0.03, 0.054 )
+mass = 1.02041e-05
+physics_material_override = SubResource( 9 )
+gravity_scale = 0.3
+
+[node name="Crate" type="Sprite" parent="Box2"]
+position = Vector2( -0.194066, -0.367442 )
+scale = Vector2( 0.638624, 0.628392 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Box2"]
+position = Vector2( -2.73436e-06, -0.104408 )
+scale = Vector2( 3.22264, 3.21095 )
+shape = SubResource( 1 )
+
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="Tree" type="Sprite" parent="Objects"]
+position = Vector2( -81.91, -2.8752 )
+scale = Vector2( 0.1, 0.2 )
+texture = ExtResource( 4 )
+
+[node name="Tree2" type="Sprite" parent="Objects"]
+position = Vector2( -22.1683, 16.2928 )
+scale = Vector2( 0.1, 0.15 )
+texture = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Objects"]
+position = Vector2( -10.8336, 2.02329 )
+scale = Vector2( 0.035, 0.075 )
+texture = ExtResource( 6 )
+
+[node name="Sprite2" type="Sprite" parent="Objects"]
+
+[node name="Sprite3" type="Sprite" parent="Objects"]
+position = Vector2( 51.4129, -13.8436 )
+scale = Vector2( 0.035, 0.075 )
+texture = ExtResource( 6 )
+
+[node name="Sprite4" type="Sprite" parent="Objects"]
+position = Vector2( 23.7339, -13.6306 )
+scale = Vector2( 0.035, 0.075 )
+texture = ExtResource( 7 )
+
+[node name="Bush (2)" type="Sprite" parent="Objects"]
+position = Vector2( 64.4074, -17.0773 )
+scale = Vector2( 0.08, 0.14 )
+texture = ExtResource( 8 )
+
+[node name="Cactus" type="Sprite" parent="Objects"]
+position = Vector2( 6.28868, 19.1673 )
+scale = Vector2( 0.035, 0.075 )
+texture = ExtResource( 9 )
+
+[node name="Cactus 2" type="Sprite" parent="Objects"]
+position = Vector2( -7.04988, -0.42674 )
+scale = Vector2( 0.035, 0.075 )
+texture = ExtResource( 10 )
+
+[node name="Cactus 3" type="Sprite" parent="Objects"]
+position = Vector2( 28.0186, 20.0192 )
+scale = Vector2( 0.08, 0.15 )
+texture = ExtResource( 11 )
+
+[node name="Stone" type="Sprite" parent="Objects"]
+position = Vector2( 48.4335, 20.2322 )
+scale = Vector2( 0.035, 0.075 )
+texture = ExtResource( 12 )
+
+[node name="Stone2" type="Sprite" parent="Objects"]
+position = Vector2( 11.9873, -14.5898 )
+scale = Vector2( 0.035, 0.075 )
+texture = ExtResource( 12 )
+
+[node name="Skeleton" type="Sprite" parent="Objects"]
+position = Vector2( 38.727, 21.1906 )
+scale = Vector2( 0.035, 0.075 )
+texture = ExtResource( 13 )
+
+[node name="SignArrow" type="Sprite" parent="Objects"]
+position = Vector2( 18.1758, -14.2693 )
+scale = Vector2( 0.04, 0.075 )
+texture = ExtResource( 14 )
+
+[node name="Sign" type="Sprite" parent="Objects"]
+position = Vector2( 117.557, 19.7007 )
+scale = Vector2( 0.05, 0.075 )
+texture = ExtResource( 15 )
+
+[node name="Player" type="KinematicBody2D" parent="." groups=["Player"]]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+visible = false
+current = true
+limit_left = -1028
+limit_right = 2615
+limit_bottom = 850
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
+scale = Vector2( 0.013, 0.021 )
+frames = SubResource( 2 )
+animation = "Jump"
+frame = 11
+playing = true
+
+[node name="RectMiddleWithoutFlip" type="CollisionShape2D" parent="Player"]
+position = Vector2( -1.43852, -0.372216 )
+scale = Vector2( 0.142104, 0.380666 )
+shape = SubResource( 3 )
+
+[node name="RectMiddleWithFlip" type="CollisionShape2D" parent="Player"]
+position = Vector2( 1.50472, -0.372216 )
+scale = Vector2( 0.142104, 0.380666 )
+shape = SubResource( 3 )
+disabled = true
+
+[node name="RectBottomWithoutFlip" type="CollisionShape2D" parent="Player" groups=["Foots"]]
+position = Vector2( -1.43852, 3.6346 )
+scale = Vector2( 0.142104, 0.0196138 )
+shape = SubResource( 3 )
+one_way_collision = true
+
+[node name="RectBottomWithFlip" type="CollisionShape2D" parent="Player" groups=["Foots"]]
+position = Vector2( 1.50472, 3.6346 )
+scale = Vector2( 0.142104, 0.0196138 )
+shape = SubResource( 3 )
+disabled = true
+one_way_collision = true
+
+[node name="RectTopWithoutFlip2" type="CollisionShape2D" parent="Player" groups=["Head"]]
+position = Vector2( -1.43852, -4.2403 )
+rotation = 3.14159
+scale = Vector2( 0.142104, 0.014259 )
+shape = SubResource( 3 )
+one_way_collision = true
+
+[node name="RectTopWithFlip2" type="CollisionShape2D" parent="Player" groups=["Head"]]
+position = Vector2( 1.50472, -4.2403 )
+rotation = 3.14159
+scale = Vector2( 0.142104, 0.014259 )
+shape = SubResource( 3 )
+disabled = true
+one_way_collision = true
+
+[node name="Plattforms" type="StaticBody2D" parent="."]
+position = Vector2( 0.193557, -0.115084 )
+physics_material_override = SubResource( 10 )
+
+[node name="1" type="Sprite" parent="Plattforms"]
+position = Vector2( -34.8317, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 54 )
+
+[node name="2" type="Sprite" parent="Plattforms"]
+position = Vector2( -28.998, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="3" type="Sprite" parent="Plattforms"]
+position = Vector2( -23.1702, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="4" type="Sprite" parent="Plattforms"]
+position = Vector2( -17.3151, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="5" type="Sprite" parent="Plattforms"]
+position = Vector2( -11.4736, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 54 )
+flip_h = true
+
+[node name="6" type="Sprite" parent="Plattforms"]
+position = Vector2( 0.236745, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 54 )
+
+[node name="7" type="Sprite" parent="Plattforms"]
+position = Vector2( 6.07435, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="8" type="Sprite" parent="Plattforms"]
+position = Vector2( 11.8845, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 54 )
+flip_h = true
+
+[node name="9" type="Sprite" parent="Plattforms"]
+position = Vector2( 23.5322, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 54 )
+
+[node name="10" type="Sprite" parent="Plattforms"]
+position = Vector2( 29.3698, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="11" type="Sprite" parent="Plattforms"]
+position = Vector2( 35.225, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="12" type="Sprite" parent="Plattforms"]
+position = Vector2( 41.0762, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="13" type="Sprite" parent="Plattforms"]
+position = Vector2( 46.9627, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="14" type="Sprite" parent="Plattforms"]
+position = Vector2( 52.8394, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 54 )
+flip_h = true
+
+[node name="15" type="Sprite" parent="Plattforms"]
+position = Vector2( -34.8317, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 56 )
+
+[node name="16" type="Sprite" parent="Plattforms"]
+position = Vector2( -28.998, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 57 )
+
+[node name="17" type="Sprite" parent="Plattforms"]
+position = Vector2( -23.1702, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 57 )
+
+[node name="18" type="Sprite" parent="Plattforms"]
+position = Vector2( -17.3151, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 57 )
+
+[node name="19" type="Sprite" parent="Plattforms"]
+position = Vector2( -11.4736, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 56 )
+flip_h = true
+
+[node name="20" type="Sprite" parent="Plattforms"]
+position = Vector2( 0.236744, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 56 )
+
+[node name="21" type="Sprite" parent="Plattforms"]
+position = Vector2( 6.07434, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 57 )
+
+[node name="22" type="Sprite" parent="Plattforms"]
+position = Vector2( 11.8845, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 56 )
+flip_h = true
+
+[node name="23" type="Sprite" parent="Plattforms"]
+position = Vector2( 23.5322, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 58 )
+
+[node name="24" type="Sprite" parent="Plattforms"]
+position = Vector2( 29.3698, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="25" type="Sprite" parent="Plattforms"]
+position = Vector2( 35.225, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="26" type="Sprite" parent="Plattforms"]
+position = Vector2( 41.0762, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="27" type="Sprite" parent="Plattforms"]
+position = Vector2( 46.9627, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="28" type="Sprite" parent="Plattforms"]
+position = Vector2( 52.8394, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 58 )
+flip_h = true
+
+[node name="29" type="Sprite" parent="Plattforms"]
+position = Vector2( 23.5322, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 58 )
+
+[node name="30" type="Sprite" parent="Plattforms"]
+position = Vector2( 29.3698, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="31" type="Sprite" parent="Plattforms"]
+position = Vector2( 35.225, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="32" type="Sprite" parent="Plattforms"]
+position = Vector2( 41.0762, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="33" type="Sprite" parent="Plattforms"]
+position = Vector2( 46.9627, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="34" type="Sprite" parent="Plattforms"]
+position = Vector2( 52.8394, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 58 )
+flip_h = true
+
+[node name="35" type="Sprite" parent="Plattforms"]
+position = Vector2( 23.5322, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 60 )
+
+[node name="36" type="Sprite" parent="Plattforms"]
+position = Vector2( 29.3698, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="37" type="Sprite" parent="Plattforms"]
+position = Vector2( 35.225, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="38" type="Sprite" parent="Plattforms"]
+position = Vector2( 41.0762, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="39" type="Sprite" parent="Plattforms"]
+position = Vector2( 46.9627, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="40" type="Sprite" parent="Plattforms"]
+position = Vector2( 52.8394, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 60 )
+flip_h = true
+
+[node name="41" type="Sprite" parent="Plattforms"]
+position = Vector2( 17.7084, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 61 )
+flip_h = true
+
+[node name="42" type="Sprite" parent="Plattforms"]
+position = Vector2( 11.8317, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="43" type="Sprite" parent="Plattforms"]
+position = Vector2( 5.94522, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="44" type="Sprite" parent="Plattforms"]
+position = Vector2( 0.0939789, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="45" type="Sprite" parent="Plattforms"]
+position = Vector2( -5.76122, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="46" type="Sprite" parent="Plattforms"]
+position = Vector2( -11.5735, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+flip_h = true
+
+[node name="47" type="Sprite" parent="Plattforms"]
+position = Vector2( -17.4502, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="48" type="Sprite" parent="Plattforms"]
+position = Vector2( -23.3367, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="49" type="Sprite" parent="Plattforms"]
+position = Vector2( -29.1879, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="50" type="Sprite" parent="Plattforms"]
+position = Vector2( -35.0431, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="51" type="Sprite" parent="Plattforms"]
+position = Vector2( -40.8807, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="52" type="Sprite" parent="Plattforms"]
+position = Vector2( -46.7201, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="53" type="Sprite" parent="Plattforms"]
+position = Vector2( -52.5714, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="54" type="Sprite" parent="Plattforms"]
+position = Vector2( -58.4266, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="55" type="Sprite" parent="Plattforms"]
+position = Vector2( -64.2389, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 62 )
+flip_h = true
+
+[node name="56" type="Sprite" parent="Plattforms"]
+position = Vector2( -70.1155, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 63 )
+
+[node name="57" type="Sprite" parent="Plattforms"]
+position = Vector2( -76.002, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="58" type="Sprite" parent="Plattforms"]
+position = Vector2( -81.8533, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="59" type="Sprite" parent="Plattforms"]
+position = Vector2( -87.7085, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="60" type="Sprite" parent="Plattforms"]
+position = Vector2( -93.546, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="61" type="Sprite" parent="Plattforms"]
+position = Vector2( -70.0854, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 58 )
+flip_h = true
+
+[node name="62" type="Sprite" parent="Plattforms"]
+position = Vector2( -75.9621, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="63" type="Sprite" parent="Plattforms"]
+position = Vector2( -81.8486, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="64" type="Sprite" parent="Plattforms"]
+position = Vector2( -87.6998, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="65" type="Sprite" parent="Plattforms"]
+position = Vector2( -93.555, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="66" type="Sprite" parent="Plattforms"]
+position = Vector2( -70.0854, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 58 )
+flip_h = true
+
+[node name="67" type="Sprite" parent="Plattforms"]
+position = Vector2( -75.9621, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="68" type="Sprite" parent="Plattforms"]
+position = Vector2( -81.8486, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="69" type="Sprite" parent="Plattforms"]
+position = Vector2( -87.6998, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="70" type="Sprite" parent="Plattforms"]
+position = Vector2( -93.555, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="71" type="Sprite" parent="Plattforms"]
+position = Vector2( -70.0854, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 54 )
+flip_h = true
+
+[node name="72" type="Sprite" parent="Plattforms"]
+position = Vector2( -75.9621, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="73" type="Sprite" parent="Plattforms"]
+position = Vector2( -81.8486, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="74" type="Sprite" parent="Plattforms"]
+position = Vector2( -87.6998, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="75" type="Sprite" parent="Plattforms"]
+position = Vector2( -93.555, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="76" type="Sprite" parent="Plattforms"]
+position = Vector2( 58.7025, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 61 )
+
+[node name="77" type="Sprite" parent="Plattforms"]
+position = Vector2( 64.5577, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="78" type="Sprite" parent="Plattforms"]
+position = Vector2( 70.4089, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="79" type="Sprite" parent="Plattforms"]
+position = Vector2( 76.2954, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="80" type="Sprite" parent="Plattforms"]
+position = Vector2( 82.1721, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+flip_h = true
+
+[node name="81" type="Sprite" parent="Plattforms"]
+position = Vector2( 87.9844, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="82" type="Sprite" parent="Plattforms"]
+position = Vector2( 93.8396, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="83" type="Sprite" parent="Plattforms"]
+position = Vector2( 99.6908, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="84" type="Sprite" parent="Plattforms"]
+position = Vector2( 105.577, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="85" type="Sprite" parent="Plattforms"]
+position = Vector2( 111.454, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 61 )
+flip_h = true
+
+[node name="86" type="Sprite" parent="Plattforms"]
+position = Vector2( 128.971, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="87" type="Sprite" parent="Plattforms"]
+position = Vector2( 123.115, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="88" type="Sprite" parent="Plattforms"]
+position = Vector2( 117.278, 54.097 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 60 )
+
+[node name="89" type="Sprite" parent="Plattforms"]
+position = Vector2( 128.971, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="90" type="Sprite" parent="Plattforms"]
+position = Vector2( 123.115, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="91" type="Sprite" parent="Plattforms"]
+position = Vector2( 117.278, 45.2582 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 58 )
+
+[node name="92" type="Sprite" parent="Plattforms"]
+position = Vector2( 128.971, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="93" type="Sprite" parent="Plattforms"]
+position = Vector2( 123.115, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 59 )
+
+[node name="94" type="Sprite" parent="Plattforms"]
+position = Vector2( 117.278, 36.3129 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 58 )
+
+[node name="95" type="Sprite" parent="Plattforms"]
+position = Vector2( 128.971, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="96" type="Sprite" parent="Plattforms"]
+position = Vector2( 123.115, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 55 )
+
+[node name="97" type="Sprite" parent="Plattforms"]
+position = Vector2( 117.278, 27.3677 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 54 )
+
+[node name="98" type="Sprite" parent="Plattforms"]
+position = Vector2( -11.5735, 7.0288 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 64 )
+flip_h = true
+
+[node name="99" type="Sprite" parent="Plattforms"]
+position = Vector2( -5.76122, 7.0288 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 65 )
+
+[node name="100" type="Sprite" parent="Plattforms"]
+position = Vector2( 0.0939789, 7.0288 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 64 )
+
+[node name="101" type="Sprite" parent="Plattforms"]
+position = Vector2( 11.8317, -8.83812 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 64 )
+flip_h = true
+
+[node name="102" type="Sprite" parent="Plattforms"]
+position = Vector2( 17.7084, -8.83812 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 65 )
+flip_h = true
+
+[node name="103" type="Sprite" parent="Plattforms"]
+position = Vector2( 23.5322, -8.83812 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 64 )
+
+[node name="104" type="Sprite" parent="Plattforms"]
+position = Vector2( -58.4266, 7.0288 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 64 )
+flip_h = true
+
+[node name="105" type="Sprite" parent="Plattforms"]
+position = Vector2( -52.5714, 7.0288 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 65 )
+
+[node name="106" type="Sprite" parent="Plattforms"]
+position = Vector2( -46.7201, 7.0288 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 64 )
+
+[node name="107" type="Sprite" parent="Plattforms"]
+position = Vector2( 46.9627, -8.83812 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 64 )
+flip_h = true
+
+[node name="108" type="Sprite" parent="Plattforms"]
+position = Vector2( 52.8394, -8.83812 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 65 )
+flip_h = true
+
+[node name="109" type="Sprite" parent="Plattforms"]
+position = Vector2( 58.6633, -8.83812 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 65 )
+
+[node name="110" type="Sprite" parent="Plattforms"]
+position = Vector2( 64.4343, -8.83812 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 65 )
+flip_h = true
+
+[node name="111" type="Sprite" parent="Plattforms"]
+position = Vector2( 70.311, -8.83812 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 65 )
+flip_h = true
+
+[node name="112" type="Sprite" parent="Plattforms"]
+position = Vector2( 76.1349, -8.83812 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 64 )
+
+[node name="113" type="Sprite" parent="Plattforms"]
+position = Vector2( 93.8396, 7.0288 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 66 )
+
+[node name="114" type="Sprite" parent="Plattforms"]
+position = Vector2( -58.4266, 35.461 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 66 )
+
+[node name="115" type="Sprite" parent="Plattforms"]
+position = Vector2( 64.5577, 35.461 )
+scale = Vector2( 0.046, 0.07 )
+texture = ExtResource( 66 )
+
+[node name="PlattformTop1" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( -5.68475, 5.68217 )
+scale = Vector2( 0.87671, 0.172021 )
+shape = SubResource( 4 )
+
+[node name="PlattformTop2" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 17.7359, -10.0782 )
+scale = Vector2( 0.87671, 0.172021 )
+shape = SubResource( 4 )
+
+[node name="PlattformTop3" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 61.5437, -10.3977 )
+scale = Vector2( 1.75583, 0.172021 )
+shape = SubResource( 4 )
+
+[node name="PlattformTop4" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( -52.5887, 5.46919 )
+scale = Vector2( 0.87671, 0.172021 )
+shape = SubResource( 4 )
+
+[node name="PlattformBottom1" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( -5.84131, 7.43923 )
+scale = Vector2( 0.652715, 0.150474 )
+shape = SubResource( 5 )
+
+[node name="PlattformBottom2" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 17.5794, -8.32116 )
+scale = Vector2( 0.652715, 0.150474 )
+shape = SubResource( 5 )
+
+[node name="PlattformBottom3" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 61.5437, -8.50206 )
+scale = Vector2( 1.53424, 0.156498 )
+shape = SubResource( 5 )
+
+[node name="PlattformBottom4" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( -52.7453, 7.22625 )
+scale = Vector2( 0.652715, 0.150474 )
+shape = SubResource( 5 )
+
+[node name="Block 1" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( -58.4439, 35.6247 )
+scale = Vector2( 0.233629, 0.342886 )
+shape = SubResource( 4 )
+
+[node name="Block 2" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 64.4833, 35.6247 )
+scale = Vector2( 0.233629, 0.342885 )
+shape = SubResource( 4 )
+
+[node name="Block 3" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 93.7904, 7.5116 )
+scale = Vector2( 0.233629, 0.342885 )
+shape = SubResource( 4 )
+
+[node name="Dirty 1" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( -81.8898, 36.2418 )
+scale = Vector2( 1.47486, 1.34519 )
+shape = SubResource( 4 )
+
+[node name="Dirty 2" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( -23.1331, 54.1389 )
+scale = Vector2( 4.39533, 0.456413 )
+shape = SubResource( 4 )
+
+[node name="Dirty 3" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 38.2282, 36.4316 )
+scale = Vector2( 1.7486, 1.35978 )
+shape = SubResource( 4 )
+
+[node name="Dirty 4" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 86.1641, 54.0023 )
+scale = Vector2( 3.06367, 0.466914 )
+shape = SubResource( 4 )
+
+[node name="Dirty 5" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 123.487, 36.4316 )
+scale = Vector2( 0.92488, 1.35978 )
+shape = SubResource( 4 )
+
+[node name="Dirty 6" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 6.18105, 31.7297 )
+scale = Vector2( 0.881527, 0.901062 )
+shape = SubResource( 4 )
+
+[node name="Dirty 7" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( -23.11, 31.7297 )
+scale = Vector2( 1.46439, 0.901062 )
+shape = SubResource( 4 )
+
+[node name="Limit 1" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( 134.392, -13.995 )
+scale = Vector2( 0.0604055, 4.17896 )
+shape = SubResource( 6 )
+
+[node name="Limit 2" type="CollisionShape2D" parent="Plattforms"]
+position = Vector2( -98.7931, -11.5143 )
+scale = Vector2( 0.0448856, 3.49201 )
+shape = SubResource( 7 )
+
+[node name="FireBall" parent="." instance=ExtResource( 67 )]
+
+[node name="Knight" parent="." instance=ExtResource( 68 )]
+position = Vector2( 15.4419, -16.1854 )
+scale = Vector2( 0.0880992, 0.145093 )
+
+[node name="Knight2" parent="." instance=ExtResource( 68 )]
+position = Vector2( 49.2856, -26.5314 )
+scale = Vector2( 0.0880992, 0.145093 )
+
+[node name="Knight4" parent="." instance=ExtResource( 68 )]
+position = Vector2( 26.5287, 16.0632 )
+scale = Vector2( 0.0880992, 0.145093 )
+
+[node name="Knight5" parent="." instance=ExtResource( 68 )]
+position = Vector2( 1.14585, 17.5516 )
+scale = Vector2( 0.0880992, 0.145093 )
+
+[node name="Knight6" parent="." instance=ExtResource( 68 )]
+position = Vector2( -57.2054, -3.28598 )
+scale = Vector2( 0.0880992, 0.145093 )
+
+[node name="Knight7" parent="." instance=ExtResource( 68 )]
+position = Vector2( -29.4886, 17.5516 )
+scale = Vector2( 0.0880992, 0.145093 )
+
+[node name="Knight8" parent="." instance=ExtResource( 68 )]
+position = Vector2( -92.7997, 16.0632 )
+scale = Vector2( 0.0880992, 0.145093 )
+
+[node name="Knight9" parent="." instance=ExtResource( 68 )]
+position = Vector2( 125.726, 16.5593 )
+scale = Vector2( 0.0880992, 0.145093 )
+
+[node name="TimerForFireBall" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[connection signal="timeout" from="TimerForFireBall" to="." method="_on_TimerForFireBall_timeout"]

@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://Assets/flame_effects/flame_hrise.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[node name="FireBall" type="KinematicBody2D" groups=[
+"FireBall",
+]]
+
+position = Vector2( -36.4013, -28.1941 )
+scale = Vector2( 0.0431306, 0.0388964 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+Direction = 1
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+position = Vector2( -0.0125109, -0.052191 )
+scale = Vector2( 0.321305, 0.392916 )
+texture = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 0.0842683, -1.03963 )
+rotation = -3.14159
+scale = Vector2( 2.46413, -2.72177 )
+shape = SubResource( 1 )
+
+

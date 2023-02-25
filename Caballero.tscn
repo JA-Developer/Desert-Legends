@@ -1,0 +1,136 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Caballero.gd" type="Script" id=1]
+[ext_resource path="res://Assets/freeknight/png/Attack (1).png" type="Texture" id=2]
+[ext_resource path="res://Assets/freeknight/png/Attack (2).png" type="Texture" id=3]
+[ext_resource path="res://Assets/freeknight/png/Attack (3).png" type="Texture" id=4]
+[ext_resource path="res://Assets/freeknight/png/Attack (4).png" type="Texture" id=5]
+[ext_resource path="res://Assets/freeknight/png/Attack (5).png" type="Texture" id=6]
+[ext_resource path="res://Assets/freeknight/png/Attack (6).png" type="Texture" id=7]
+[ext_resource path="res://Assets/freeknight/png/Attack (7).png" type="Texture" id=8]
+[ext_resource path="res://Assets/freeknight/png/Attack (8).png" type="Texture" id=9]
+[ext_resource path="res://Assets/freeknight/png/Attack (9).png" type="Texture" id=10]
+[ext_resource path="res://Assets/freeknight/png/Attack (10).png" type="Texture" id=11]
+[ext_resource path="res://Assets/freeknight/png/Walk (1).png" type="Texture" id=12]
+[ext_resource path="res://Assets/freeknight/png/Walk (2).png" type="Texture" id=13]
+[ext_resource path="res://Assets/freeknight/png/Walk (3).png" type="Texture" id=14]
+[ext_resource path="res://Assets/freeknight/png/Walk (4).png" type="Texture" id=15]
+[ext_resource path="res://Assets/freeknight/png/Walk (5).png" type="Texture" id=16]
+[ext_resource path="res://Assets/freeknight/png/Walk (6).png" type="Texture" id=17]
+[ext_resource path="res://Assets/freeknight/png/Walk (7).png" type="Texture" id=18]
+[ext_resource path="res://Assets/freeknight/png/Walk (8).png" type="Texture" id=19]
+[ext_resource path="res://Assets/freeknight/png/Walk (9).png" type="Texture" id=20]
+[ext_resource path="res://Assets/freeknight/png/Walk (10).png" type="Texture" id=21]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="Knight" type="KinematicBody2D" groups=[
+"Knight",
+]]
+
+position = Vector2( 37.6534, 39.6679 )
+scale = Vector2( 1.14037, 1.23219 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "collision" ]
+
+[node name="Knight" type="AnimatedSprite" parent="." index="0"]
+
+position = Vector2( -0.0496848, -0.122794 )
+scale = Vector2( 0.109013, 0.0898626 )
+frames = SubResource( 1 )
+animation = "Walk"
+frame = 6
+playing = true
+
+[node name="MiddleShape" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 0.169507, -3.83063 )
+scale = Vector2( 2.89889, 2.8948 )
+shape = SubResource( 2 )
+
+[node name="LeftShape" type="CollisionShape2D" parent="." index="2"]
+
+position = Vector2( -30.3098, -3.83063 )
+scale = Vector2( 0.172661, 2.8948 )
+shape = SubResource( 2 )
+
+[node name="RightShape" type="CollisionShape2D" parent="." index="3"]
+
+position = Vector2( 30.8851, -3.83063 )
+scale = Vector2( 0.209011, 2.8948 )
+shape = SubResource( 2 )
+
+[node name="BottomShape" type="CollisionShape2D" parent="." index="4"]
+
+position = Vector2( 0.613667, 26.8044 )
+scale = Vector2( 2.8941, 0.134564 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="Ray 1" type="RayCast2D" parent="." index="5"]
+
+position = Vector2( -29.9394, 28.3335 )
+scale = Vector2( 1, 2.38456 )
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 0, 5 )
+collision_mask = 1
+_sections_unfolded = [ "Transform" ]
+
+[node name="Ray 2" type="RayCast2D" parent="." index="6"]
+
+position = Vector2( 30.8214, 28.8693 )
+scale = Vector2( 1, 2.67867 )
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 0, 5 )
+collision_mask = 1
+_sections_unfolded = [ "Transform" ]
+
+[node name="ProgressBar" type="ProgressBar" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -34.0
+margin_top = -49.0
+margin_right = 34.0
+margin_bottom = -33.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 0
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+percent_visible = true
+
+
