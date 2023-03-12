@@ -1,4 +1,4 @@
-# FarmaPOS
+# Desert Legends
 
 <p align="center">
   <a href="https://godotengine.org">

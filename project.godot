@@ -12,7 +12,11 @@ config_version=4
 
 config/name="Desert Legends"
 run/main_scene="res://World.tscn"
+boot_splash/image="res://cactus.png"
+boot_splash/fullsize=false
+boot_splash/bg_color=Color( 0.784314, 0.588235, 0.294118, 1 )
 config/icon="res://icon.png"
+config/windows_native_icon="res://cactus.ico"
 
 [display]
 
