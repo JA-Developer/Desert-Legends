@@ -1,8 +1,8 @@
 # Desert Legends
 
 <p align="center">
-  <a href="https://godotengine.org">
-    <img src="public/healthcare.png" width="400" alt="Godot Engine logo">
+  <a href="https://github.com/JA-Developer/Desert-Legends">
+    <img src="icon.png" width="400" alt="Godot Engine logo">
   </a>
 </p>
 
