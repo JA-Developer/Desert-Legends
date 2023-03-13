@@ -30,6 +30,10 @@ To attack enemies, the player must press the space bar, as shown in the followin
   </a>
 </p>
 
+## Try it yourself
+
+You can play a demo of the game at the following link: [Desert Legends](https://desertlegends.000webhostapp.com/).
+
 ## Contributing
 
 Desert Legends was developed by [JA-Developer](https://github.com/JA-Developer) using Godot Engine. The sprites and assets where provided by [Game Art 2D](https://www.gameart2d.com/).
